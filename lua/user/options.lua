@@ -1,4 +1,4 @@
-vim.opt.guifont = {"", ":h10"}
+vim.opt.guifont = ":h10"
 vim.opt.title = false
 vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"

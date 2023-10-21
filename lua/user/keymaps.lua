@@ -13,6 +13,9 @@ keymap("n", "<F12>", "<cmd>:AerialToggle<CR>", options) -- Open (or focus) tags.
 keymap("n", "g<F12>", "<cmd>:AerialClose<CR>", options) -- Open (or focus) tags.
 keymap("n", "<leader>w", "<cmd>:update<CR>", options) -- Write current file, if changed.
 keymap("n", "<leader>b", "<cmd>:b#<CR>", options) -- Go to previous buffer
+keymap("n", "<leader>f", "<cmd>:Telescope git_files<CR>", options) -- File finder
+keymap("n", "<leader>gf", "<cmd>:Telescope find_files<CR>", options) -- File finder
+keymap("n", "<leader>gg", "<cmd>:Neogit<CR>", options) -- Magit clone
 
 
 -- Put insert mode keymappings here.
