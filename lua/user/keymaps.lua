@@ -13,10 +13,18 @@ keymap("n", "<F12>", "<cmd>:AerialOpen<CR>", options) -- Open (or focus) tags.
 keymap("n", "g<F12>", "<cmd>:AerialClose<CR>", options) -- Open (or focus) tags.
 keymap("n", "<leader>w", "<cmd>:update<CR>", options) -- Write current file, if changed.
 keymap("n", "<leader>b", "<cmd>:b#<CR>", options) -- Go to previous buffer
-keymap("n", "<leader>f", "<cmd>:Telescope git_files<CR>", options) -- File finder
-keymap("n", "<leader>v", "<cmd>:Telescope buffers<CR>", options) -- Show all open buffers
-keymap("n", "<leader>gf", "<cmd>:Telescope find_files<CR>", options) -- File finder
-keymap("n", "<leader>gg", "<cmd>:Neogit<CR>", options) -- Magit clone
+keymap("n", "<leader>o", "<cmd>:only<CR>", options) -- Close all other windows
+
+keymap("n", "<leader>cd", "<cmd>cd %:h<CR>", options) -- Change current directory to that of the current buffer.
+
+-- File finding
+keymap("n", "<leader>ff", "<cmd>:Telescope find_files<CR>", options)
+keymap("n", "<leader>fg", "<cmd>:Telescope git_files<CR>", options)
+keymap("n", "<leader>fs", "<cmd>:Telescope live_grep<CR>", options) -- Requires ripgrep to be installed!
+keymap("n", "<leader>fb", "<cmd>:Telescope buffers<CR>", options)
+
+-- Git
+keymap("n", "<leader>gg", "<cmd>:Neogit<CR>", options)
 
 
 -- Put insert mode keymappings here.

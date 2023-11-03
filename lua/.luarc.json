@@ -18,5 +18,6 @@
         "/home/casper/.local/share/nvim/lazy/nvim-autopairs/lua",
         "/home/casper/.config/nvim/lua",
         "${3rd}/luv/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }
