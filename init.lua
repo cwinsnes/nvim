@@ -19,5 +19,7 @@ spec 'user.indentguides'
 spec 'user.marks'
 spec 'user.rsi'
 spec 'user.surround'
+spec 'user.python_venv'
+spec 'user.todo_comments'
 
 require 'user.lazy'
