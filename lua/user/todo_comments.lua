@@ -4,7 +4,28 @@ local M = {
 }
 
 function M.config()
-  require("todo-comments").setup()
+  require("todo-comments").setup(
+    {
+      search = {
+        command = "rg",
+        args = {
+          "--glob=!lib/",
+          "--glob=!venv/",
+          "--glob=!.venv/",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+        },
+
+        -- regex that will be used to match keywords.
+        -- don't replace the (KEYWORDS) placeholder
+        pattern = [[\b(KEYWORDS):]], -- ripgrep regex
+        -- pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon. You'll likely get false positives
+      },
+    }
+  )
 end
 
 return M
