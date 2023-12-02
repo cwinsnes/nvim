@@ -19,6 +19,12 @@ local function lsp_keymaps(bufnr)
   keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
   keymap(bufnr, "n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
   keymap(bufnr, "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
+
+  -- Requires actions-preview to be installed
+  keymap(bufnr, "n", "g?", "<cmd>lua require('actions-preview').code_actions()<CR>", opts)
+  -- Otherwise use the below one
+  -- keymap(bufnr, "n", "g?", "<cmd>lua vim.lsp.buf.code_action({apply=false})<CR>", opts)
+
   keymap(bufnr, "n", "<localleader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
 end
 

@@ -14,7 +14,7 @@ vim.opt.tabstop = 2
 vim.opt.completeopt = { "menu" }
 
 -- Persistent undo
-local prefix = vim.fn.expand("~/.config")
+local prefix = vim.fn.stdpath("data")
 vim.opt.undodir = prefix .. "/undo"
 vim.opt.undofile = true
 -- End persistent undo

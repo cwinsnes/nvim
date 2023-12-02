@@ -23,6 +23,9 @@ keymap("n", "<leader>fg", "<cmd>:Telescope git_files<CR>", options)
 keymap("n", "<leader>fs", "<cmd>:Telescope live_grep<CR>", options) -- Requires ripgrep to be installed!
 keymap("n", "<leader>fb", "<cmd>:Telescope buffers<CR>", options)
 
+-- Project management
+keymap("n", "<leader>pp", "<cmd>:lua require'telescope'.extensions.project.project{}<CR>", options)
+
 -- Git
 keymap("n", "<leader>gg", "<cmd>:Neogit<CR>", options)
 
