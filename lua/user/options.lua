@@ -11,6 +11,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.scrolloff = 5
+vim.opt.signcolumn = "yes"
 
 vim.opt.completeopt = { "menu" }
 
