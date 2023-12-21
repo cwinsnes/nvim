@@ -25,5 +25,7 @@ spec 'user.project_manager'
 spec 'user.trouble'
 spec 'user.codeactions'
 spec 'user.codeactions_preview'
+spec 'user.lualine'
+spec 'user.snippets'
 
 require 'user.lazy'
