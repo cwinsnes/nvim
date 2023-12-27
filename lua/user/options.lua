@@ -12,6 +12,8 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.scrolloff = 5
 vim.opt.signcolumn = "yes"
+vim.opt.foldlevelstart = 99
+vim.opt.background = "dark"
 
 vim.opt.completeopt = { "menu" }
 

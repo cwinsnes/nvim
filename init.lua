@@ -27,5 +27,6 @@ spec 'user.codeactions'
 spec 'user.codeactions_preview'
 spec 'user.lualine'
 spec 'user.snippets'
+spec 'user.orgmode'
 
 require 'user.lazy'
